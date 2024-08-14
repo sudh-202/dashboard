@@ -1,36 +1,14 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Dashboard Widget Manager
 
-## Getting Started
+This is a dynamic dashboard widget management application built using React with TypeScript. It allows users to add, remove, and search for widgets within different categories, with a user-friendly sidebar for adding new widgets.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Dynamic Widget Management:** Users can easily add or remove widgets from different categories.
+- **Search Functionality:** Search through widgets using a search bar that filters widgets by name.
+- **Category Tabs:** The sidebar includes tabs for different categories, allowing users to switch between them and manage widgets accordingly.
+- **Responsive Design:** The layout adjusts for various screen sizes, ensuring a consistent user experience on both mobile and desktop devices.
+- **Sidebar for Widget Addition:** A right-side sliding sidebar is used for adding new widgets to the dashboard, featuring a form for entering widget details.
+- **Smooth Transitions:** Transitions and UI interactions are smooth, providing a polished user experience.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
