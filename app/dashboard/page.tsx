@@ -114,7 +114,7 @@ export default function Dashboard() {
             onChange={(e) => setWidgetContent(e.target.value)}
             className="p-2 border mb-4 w-full"
           />
-          <div className="mt-4 flex justify-between">
+          <div className="mt-4 flex justify-end gap-6">
             <button
               onClick={confirmAddWidget}
               className="inline-flex justify-center rounded-md border border-transparent bg-blue-600 px-4 py-2 text-sm font-medium text-white hover:bg-blue-700"
