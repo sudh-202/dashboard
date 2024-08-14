@@ -1,5 +1,4 @@
-"use client";
-
+"use client"
 import { useState } from "react";
 import { FaPlus, FaTimes } from "react-icons/fa";
 import { initialData } from "@/constant";
@@ -63,7 +62,7 @@ export default function Dashboard() {
     <div className="relative flex flex-col h-screen">
       {/* Sidebar */}
       <div
-        className={`fixed inset-y-0 right-0 z-40 w-[25vw] bg-white shadow-lg transform ${
+        className={`fixed inset-y-0 right-0 z-40 w-[35vw] bg-white shadow-lg transform ${
           isSidebarOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300 ease-in-out`}
       >
@@ -73,23 +72,24 @@ export default function Dashboard() {
           {/* Category Tabs */}
           <div className="flex mb-4 border-b">
             {data.categories.map((category, index) => (
-              <button
-                key={category.name}
-                className={`px-4 py-2 focus:outline-none ${
-                  index === selectedCategoryIndex
-                    ? "border-b-2 border-blue-600 text-blue-600"
-                    : "text-gray-600"
-                }`}
-                onClick={() => setSelectedCategoryIndex(index)}
-              >
-                {category.name}
+              <div key={category.name} className="flex items-center">
+                <button
+                  className={`px-4 py-2 focus:outline-none ${
+                    index === selectedCategoryIndex
+                      ? "border-b-2 border-blue-600 text-blue-600"
+                      : "text-gray-600"
+                  }`}
+                  onClick={() => setSelectedCategoryIndex(index)}
+                >
+                  {category.name}
+                </button>
                 <button
                   onClick={() => removeCategory(index)}
                   className="ml-2 text-red-500"
                 >
                   <FaTimes />
                 </button>
-              </button>
+              </div>
             ))}
           </div>
 
